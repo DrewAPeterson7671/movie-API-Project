@@ -21,5 +21,10 @@ $(document).ready(function() {
       $('.showHumidity').text(`${response.Title}`);
       $('.showTemp').text(`${response.Director}`);
     }
+
+    setInterval (function() {
+      $("#imageToPlay").toggle();
+    },1000);
+
   });
 });
